@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-export default function MAHero() {
+export default function AccountingHero() {
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       {/* 背景装飾 */}
@@ -26,7 +26,7 @@ export default function MAHero() {
               </Link>
             </li>
             <li>/</li>
-            <li className="text-gray-600">M&Aアドバイザリー</li>
+            <li className="text-gray-600">会計税務コンサルティング</li>
           </ol>
         </nav>
 
@@ -34,14 +34,15 @@ export default function MAHero() {
           {/* テキストコンテンツ */}
           <div>
             <p className="text-[#84ab52] text-sm tracking-[0.3em] uppercase font-light mb-4">
-              M&A Advisory
+              Accounting & Tax
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-800 leading-tight mb-6">
-              <span className="block">M&Aアドバイザリー</span>
+              <span className="block">会計税務</span>
+              <span className="block">コンサルティング</span>
             </h1>
             <p className="text-base md:text-lg text-gray-600 font-light leading-relaxed">
-              ターゲット探索・DD・バリュエーション・契約実務・PMI設計まで。
-              日本本社とベトナム現地の双方に通じたチームで、意思決定と推進を高速化します。
+              帳簿作成・月次/年次決算・税務申告・監査対応・日本連結レポーティングまで。
+              現地基準と日本基準の「橋渡し」をワンチームで提供します。
             </p>
           </div>
 
@@ -59,10 +60,10 @@ export default function MAHero() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={1}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
                   />
                 </svg>
-                <p className="text-[#84ab52]/60 text-sm">M&A Advisory Services</p>
+                <p className="text-[#84ab52]/60 text-sm">Accounting & Tax Services</p>
               </div>
             </div>
           </div>

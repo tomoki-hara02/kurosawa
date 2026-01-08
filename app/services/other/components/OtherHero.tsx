@@ -2,16 +2,14 @@
 
 import Link from 'next/link';
 
-export default function MAHero() {
+export default function OtherHero() {
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-      {/* 背景装飾 */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full blur-3xl bg-[#84ab52]/10"></div>
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full blur-3xl bg-[#84ab52]/5"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full blur-3xl bg-[#84ab52]/5"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-        {/* パンくずリスト */}
         <nav className="mb-8">
           <ol className="flex items-center gap-2 text-sm text-gray-400">
             <li>
@@ -26,26 +24,24 @@ export default function MAHero() {
               </Link>
             </li>
             <li>/</li>
-            <li className="text-gray-600">M&Aアドバイザリー</li>
+            <li className="text-gray-600">その他業務</li>
           </ol>
         </nav>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* テキストコンテンツ */}
           <div>
             <p className="text-[#84ab52] text-sm tracking-[0.3em] uppercase font-light mb-4">
-              M&A Advisory
+              Other Services
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-800 leading-tight mb-6">
-              <span className="block">M&Aアドバイザリー</span>
+              <span className="block">その他業務</span>
             </h1>
             <p className="text-base md:text-lg text-gray-600 font-light leading-relaxed">
-              ターゲット探索・DD・バリュエーション・契約実務・PMI設計まで。
-              日本本社とベトナム現地の双方に通じたチームで、意思決定と推進を高速化します。
+              翻訳・通訳サービス、不動産コンサルティング、信用調査、秘書代行など。
+              ベトナムでのビジネスに関わる様々なご要望にお応えします。
             </p>
           </div>
 
-          {/* イメージエリア */}
           <div className="relative h-[300px] lg:h-[400px] rounded-2xl overflow-hidden bg-gradient-to-br from-[#84ab52]/20 to-[#84ab52]/5">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
@@ -59,10 +55,10 @@ export default function MAHero() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={1}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
                   />
                 </svg>
-                <p className="text-[#84ab52]/60 text-sm">M&A Advisory Services</p>
+                <p className="text-[#84ab52]/60 text-sm">Other Business Services</p>
               </div>
             </div>
           </div>
