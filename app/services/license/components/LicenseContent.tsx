@@ -350,7 +350,9 @@ export default function LicenseContent() {
 
                 <div className="bg-gray-50 rounded-xl p-6">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
-                    <h3 className="text-lg font-medium text-gray-800">労働許可証（ワークパーミット）</h3>
+                    <h3 className="text-lg font-medium text-gray-800">
+                      労働許可証（ワークパーミット）
+                    </h3>
                     <span className="inline-flex items-center px-4 py-2 bg-[#84ab52] text-white text-sm font-medium rounded-lg">
                       USD 400〜800/人
                     </span>

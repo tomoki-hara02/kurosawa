@@ -24,7 +24,7 @@ export default function Achievement() {
   const repeatedClients = [...clients, ...clients];
 
   const stats = [
-    { value: '40', suffix: '名', label: 'スタッフ人数' },
+    { value: '50', suffix: '名', label: 'スタッフ人数' },
     { value: '8', suffix: '名', label: '日本語話者' },
     { value: '280', suffix: '社超', label: '取引実績' },
     { value: '75', suffix: '社超', label: '顧問先' },

@@ -413,7 +413,9 @@ export default function EstablishmentContent() {
                       USD 3,000〜5,000
                     </span>
                   </div>
-                  <p className="text-sm text-gray-600 mb-3">投資登録証明書・事業登録証明書の取得、定款作成等を含む</p>
+                  <p className="text-sm text-gray-600 mb-3">
+                    投資登録証明書・事業登録証明書の取得、定款作成等を含む
+                  </p>
                   <ul className="grid sm:grid-cols-2 gap-2">
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#84ab52]"></span>
@@ -441,7 +443,9 @@ export default function EstablishmentContent() {
                       USD 2,000〜3,000
                     </span>
                   </div>
-                  <p className="text-sm text-gray-600 mb-3">駐在員事務所設立許可の取得手続きを含む</p>
+                  <p className="text-sm text-gray-600 mb-3">
+                    駐在員事務所設立許可の取得手続きを含む
+                  </p>
                   <ul className="grid sm:grid-cols-2 gap-2">
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#84ab52]"></span>

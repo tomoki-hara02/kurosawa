@@ -408,7 +408,9 @@ export default function AccountingContent() {
                       USD 500〜1,500/月
                     </span>
                   </div>
-                  <p className="text-sm text-gray-600 mb-3">記帳代行＋月次決算＋税務相談を含む包括サービス</p>
+                  <p className="text-sm text-gray-600 mb-3">
+                    記帳代行＋月次決算＋税務相談を含む包括サービス
+                  </p>
                   <ul className="grid sm:grid-cols-2 gap-2">
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#84ab52]"></span>

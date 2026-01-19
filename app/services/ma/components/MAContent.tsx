@@ -402,7 +402,9 @@ export default function MAContent() {
                       USD 5,000〜15,000
                     </span>
                   </div>
-                  <p className="text-sm text-gray-600 mb-3">ターゲット企業の探索・選定、初期分析を含む</p>
+                  <p className="text-sm text-gray-600 mb-3">
+                    ターゲット企業の探索・選定、初期分析を含む
+                  </p>
                   <ul className="grid sm:grid-cols-2 gap-2">
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#84ab52]"></span>
@@ -430,7 +432,9 @@ export default function MAContent() {
                       USD 10,000〜30,000
                     </span>
                   </div>
-                  <p className="text-sm text-gray-600 mb-3">財務・法務・税務・事業デューデリジェンスを含む</p>
+                  <p className="text-sm text-gray-600 mb-3">
+                    財務・法務・税務・事業デューデリジェンスを含む
+                  </p>
                   <ul className="grid sm:grid-cols-2 gap-2">
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#84ab52]"></span>
@@ -453,12 +457,16 @@ export default function MAContent() {
 
                 <div className="bg-gray-50 rounded-xl p-6">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
-                    <h3 className="text-lg font-medium text-gray-800">フルスコープアドバイザリー</h3>
+                    <h3 className="text-lg font-medium text-gray-800">
+                      フルスコープアドバイザリー
+                    </h3>
                     <span className="inline-flex items-center px-4 py-2 bg-[#84ab52] text-white text-sm font-medium rounded-lg">
                       成功報酬型（要相談）
                     </span>
                   </div>
-                  <p className="text-sm text-gray-600 mb-3">M&Aプロセス全体のアドバイザリーサービス</p>
+                  <p className="text-sm text-gray-600 mb-3">
+                    M&Aプロセス全体のアドバイザリーサービス
+                  </p>
                   <ul className="grid sm:grid-cols-2 gap-2">
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#84ab52]"></span>
