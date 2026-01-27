@@ -23,33 +23,78 @@ type FlowStep = {
   details: string[];
 };
 
-const flowSteps: FlowStep[] = [
+type DocumentItem = {
+  name: string;
+  note?: string;
+};
+
+type FlowStepExtended = FlowStep & {
+  documents?: DocumentItem[];
+};
+
+const flowSteps: FlowStepExtended[] = [
   {
     number: '01',
-    title: '事前調査・戦略立案',
-    description: '市場調査から進出形態の検討まで',
-    duration: '1〜2ヶ月',
+    title: 'IRC（投資登録証明書）の取得',
+    description: '外資企業として投資活動を行うための登録証明書を取得',
+    duration: '2〜4週間',
     details: [
-      'ベトナム市場の調査・分析',
-      '競合・業界動向のリサーチ',
-      '進出形態の比較検討（現地法人/駐在員事務所/支店）',
-      '事業計画の策定支援',
+      '計画投資局（DPI）への申請',
+      '投資プロジェクトの内容審査',
+      '外資規制業種の確認・対応',
+      '承認後にIRC発行',
+    ],
+    documents: [
+      { name: '投資実施申請書', note: '所定フォーマット' },
+      { name: '出資者の決算書（直近2期分）', note: '法人の場合' },
+      { name: 'パスポート写し', note: '個人出資者の場合' },
+      { name: '投資プロジェクト提案書', note: '事業計画・資本金・人員計画等' },
+      { name: '賃貸契約書の写し', note: 'オフィス所在地証明' },
+      { name: '親会社の登記簿謄本', note: '日本での公証・翻訳認証・領事認証要' },
     ],
   },
   {
     number: '02',
-    title: '法人設立手続き',
-    description: '投資登録から事業登録まで',
-    duration: '2〜3ヶ月',
+    title: 'ERC（企業登録証明書）の取得',
+    description: '法人としての設立登記を行い、法人コード（税コード）を取得',
+    duration: '1〜2週間',
     details: [
-      '投資登録証明書（IRC）の取得',
-      '事業登録証明書（ERC）の取得',
-      '定款・社内規程の作成',
-      '銀行口座の開設',
+      'IRC取得後に申請可能',
+      '企業登記局への申請',
+      '法人コード（税コード）の取得',
+      '法人印鑑の作成・届出',
+    ],
+    documents: [
+      { name: '企業登録申請書', note: '所定フォーマット' },
+      { name: '会社定款', note: 'ベトナム語で作成' },
+      { name: '出資者リスト', note: '出資比率・金額を明記' },
+      { name: '法定代表者のパスポート写し' },
+      { name: 'IRC（投資登録証明書）の写し' },
+      { name: '取締役会決議書', note: '代表者選任・定款承認等' },
     ],
   },
   {
     number: '03',
+    title: '資本金振込・銀行口座開設',
+    description: '法人口座を開設し、登録資本金を振り込む',
+    duration: '2〜4週間',
+    details: [
+      '法人銀行口座の開設',
+      '直接投資専用口座（DICA）の開設',
+      '資本金の送金・振込',
+      '資本金払込証明書の取得',
+    ],
+    documents: [
+      { name: 'IRC・ERCの原本', note: '銀行確認用' },
+      { name: '法定代表者のパスポート原本' },
+      { name: '会社定款の写し' },
+      { name: '法人印鑑届出書' },
+      { name: '口座開設申請書', note: '各銀行所定フォーマット' },
+      { name: '親会社からの送金指示書', note: '資本金送金時' },
+    ],
+  },
+  {
+    number: '04',
     title: '許認可・ライセンス取得',
     description: '業種別に必要な許認可を取得',
     duration: '1〜3ヶ月',
@@ -61,14 +106,14 @@ const flowSteps: FlowStep[] = [
     ],
   },
   {
-    number: '04',
+    number: '05',
     title: 'オフィス設立・人材採用',
     description: 'オフィス開設と初期メンバーの採用',
     duration: '1〜2ヶ月',
     details: ['オフィス物件の選定・契約', '内装・設備の手配', '人材採用支援', '労働許可証の取得'],
   },
   {
-    number: '05',
+    number: '06',
     title: '事業開始・運営サポート',
     description: '円滑な事業開始をサポート',
     duration: '継続',
@@ -96,17 +141,17 @@ const supportItems: SupportItem[] = [
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={1.5}
-          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
         />
       </svg>
     ),
-    title: '市場調査・進出戦略',
-    description: 'ベトナム市場を深く理解し、最適な進出戦略を策定します。',
+    title: 'IRC（投資登録証明書）取得',
+    description: '外資企業の投資活動に必要な登録証明書の取得を代行します。',
     features: [
-      '市場規模・成長性の分析',
-      '競合環境の調査',
-      'ターゲット顧客の特定',
-      '進出形態の比較検討',
+      '計画投資局（DPI）への申請代行',
+      '投資プロジェクト提案書の作成',
+      '外資規制業種の事前確認',
+      '必要書類の準備・認証手配',
     ],
   },
   {
@@ -120,13 +165,13 @@ const supportItems: SupportItem[] = [
         />
       </svg>
     ),
-    title: '法人設立・登記',
-    description: '複雑な設立手続きをワンストップでサポートします。',
+    title: 'ERC（企業登録証明書）取得',
+    description: '法人設立登記と法人コード取得をワンストップでサポートします。',
     features: [
-      '投資登録証明書（IRC）取得',
-      '事業登録証明書（ERC）取得',
-      '定款・社内規程作成',
-      '各種届出の代行',
+      '企業登記局への申請代行',
+      '会社定款の作成・翻訳',
+      '法人コード（税コード）の取得',
+      '法人印鑑の作成・届出',
     ],
   },
   {
@@ -140,13 +185,13 @@ const supportItems: SupportItem[] = [
         />
       </svg>
     ),
-    title: '許認可・ライセンス',
+    title: '許認可・ライセンス取得',
     description: '業種に応じた各種許認可の取得を代行します。',
     features: [
       '業種別ライセンス申請',
-      '労働許可証の取得',
-      '輸出入ライセンス',
+      '輸出入ライセンスの取得',
       '環境・安全関連許可',
+      'サブライセンスの取得',
     ],
   },
   {
@@ -162,7 +207,12 @@ const supportItems: SupportItem[] = [
     ),
     title: '人材採用・労務',
     description: '優秀な人材の採用から労務管理までサポートします。',
-    features: ['人材紹介・採用支援', '就業規則の作成', '給与計算・社会保険', '労務トラブル対応'],
+    features: [
+      '人材紹介・採用支援',
+      '労働許可証の取得代行',
+      '就業規則の作成',
+      '給与計算・社会保険手続き',
+    ],
   },
 ];
 
@@ -358,6 +408,56 @@ export default function EstablishmentContent() {
                             </li>
                           ))}
                         </ul>
+
+                        {/* 必要書類リスト */}
+                        {step.documents && step.documents.length > 0 && (
+                          <div className="mt-6 pt-5 border-t border-gray-200">
+                            <h4 className="flex items-center gap-2 text-sm font-medium text-gray-800 mb-3">
+                              <svg
+                                className="w-4 h-4 text-[#84ab52]"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                />
+                              </svg>
+                              必要書類
+                            </h4>
+                            <ul className="grid sm:grid-cols-2 gap-2">
+                              {step.documents.map((doc, i) => (
+                                <li
+                                  key={i}
+                                  className="flex items-start gap-2 text-sm text-gray-600 bg-white rounded-lg px-3 py-2"
+                                >
+                                  <svg
+                                    className="w-4 h-4 text-gray-400 flex-shrink-0 mt-0.5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth={2}
+                                      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                                    />
+                                  </svg>
+                                  <span>
+                                    {doc.name}
+                                    {doc.note && (
+                                      <span className="text-gray-400 text-xs ml-1">（{doc.note}）</span>
+                                    )}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>

@@ -399,7 +399,7 @@ export default function MAContent() {
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
                     <h3 className="text-lg font-medium text-gray-800">ターゲット探索・初期検討</h3>
                     <span className="inline-flex items-center px-4 py-2 bg-[#84ab52] text-white text-sm font-medium rounded-lg">
-                      USD 5,000〜15,000
+                      無償
                     </span>
                   </div>
                   <p className="text-sm text-gray-600 mb-3">
@@ -429,7 +429,7 @@ export default function MAContent() {
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
                     <h3 className="text-lg font-medium text-gray-800">デューデリジェンス</h3>
                     <span className="inline-flex items-center px-4 py-2 bg-[#84ab52] text-white text-sm font-medium rounded-lg">
-                      USD 10,000〜30,000
+                      USD 5,000〜10,000
                     </span>
                   </div>
                   <p className="text-sm text-gray-600 mb-3">
